@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/Futura 2.otf");
+}
+
+@font-face {
+    font-family: "Futura Bold";
+    src: url("../fonts/Futura.otf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* no scrolling */
+    background: #171717;
+    font-family: "Futura";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topText {
+    font-size: clamp(20px, 5vw, 36px);
+    text-align: center;
+    color: white;
+    margin-bottom: 2vh;
+    flex-shrink: 0;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spread logo + countdown */
+    align-items: center;
+    height: 70vh; /* main area for logo + countdown */
+    width: 100%;
+}
+
+.sf3Logo {
+    max-height: 35vh; /* logo never taller than 35% of screen */
+    width: auto;
+    margin-bottom: 2vh;
+    flex-shrink: 0;
+}
+
+.countdown {
+    font-size: clamp(24px, 6vw, 48px);
+    font-family: "Futura Bold";
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+@media (max-width: 400px) {
+    .topText {
+        font-size: 8vw;
+    }
+    .countdown {
+        font-size: 10vw;
+    }
+}
