@@ -54,6 +54,17 @@ html, body {
     flex-shrink: 0;
 }
 
+.countdown-digit {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.2em;
+  margin: 0 2px;
+}
+
+.countdown-digit-inner {
+  transition: transform 0.3s ease;
+}
+
 @media (max-width: 400px) {
     .topText {
         font-size: 8vw;
