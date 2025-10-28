@@ -53,6 +53,21 @@ html, body {
     color: white;
     flex-shrink: 0;
 }
+.memoriesButton {
+    font-size: clamp(24px, 6vw, 48px);
+    font-family: "Futura Bold";
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+}
+.memoriesButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+a {
+  display: inline-block; 
+  transition: transform 0.25s ease;
+}
 
 .countdown-digit {
   display: inline-block;
